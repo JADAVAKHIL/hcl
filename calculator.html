@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>Calculator</title>
+            <link rel="stylesheet" href="calculator.css">
+            <script type="text/javascript" src="calculator.js"></script>
+        </head>
+        <body>
+            <div class="calculator">
+                <div class="calcicontainer">
+                   
+                <div class="buttoncontainer">
+                <table>
+
+                    <tbody>
+                        <tr>
+                        <td colspan="3"><input type="text" class="display" id="result" readonly placeholder="0"/></td>
+                        <td><input type="button" value="AC" onclick="clearScreen()"></td>
+                    </tr>
+                        <tr class="top">
+                            
+                            <td><input type="button" value="(" onclick="openpara(this.value)"></td>
+                            <td><input type="button" value=")" onclick="closepara(this.value)"></td>
+                            <td><input type="button" value="%" onclick="num('%')"></td>
+                            <td><input type="button" value="/" onclick="num('/')"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><input type="button" value="7" onclick="num('7')"></td>
+                            <td><input type="button" value="8" onclick="num('8')"></td>
+                            <td><input type="button" value="9" onclick="num('9')"></td>
+                            <td><input type="button" value="*" onclick="num('*')"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><input type="button" value="4" onclick="num('4')"></td>
+                            <td><input type="button" value="5" onclick="num('5')"></td>
+                            <td><input type="button" value="6" onclick="num('6')"></td>
+                            <td><input type="button" value="-" onclick="num('-')"></td>
+                        </tr>
+                        <tr class="row">
+                            <td ><input type="button" value="1" onclick="num('1')"></td>
+                            <td><input type="button"  value="2" onclick="num('2')"></td>
+                            <td><input type="button"  value="3" onclick="num('3')"></td>
+                            <td><input type="button"  value="+" onclick="num('+')"></td>
+                        </tr>
+                        <tr class="row">
+                            <td><input type="button" value="." onclick="num('.')"></td>
+                            <td><input type="button" value="0" onclick="num('0')"></td>
+                            <td><input type="button" value="=" onclick="equalsTo()"></td>
+                            <td><input type="button" value="Back" onclick="back()"></td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+             </div>
+            </div>
+        </div>
+           
+           
+
+
+
+        </body>
+        
+</html>
